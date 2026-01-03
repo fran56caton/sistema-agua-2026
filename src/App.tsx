@@ -61,7 +61,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
-const appId = typeof __app_id !== "undefined" ? __app_id : "default-app-id";
+const appId = "default-app-id";
 
 // --- Lista de Vecinos (Datos Iniciales) ---
 const INITIAL_USERS = [
