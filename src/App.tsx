@@ -105,8 +105,7 @@ const App = () => {
     const initAuth = async () => {
       try {
         if (
-          typeof __initial_auth_token !== "undefined" &&
-          __initial_auth_token
+if (false && __initial_auth_token)          __initial_auth_token
         ) {
           await signInWithCustomToken(auth, __initial_auth_token);
         } else {
