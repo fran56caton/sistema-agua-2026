@@ -77,7 +77,7 @@ const INITIAL_USERS = [
 ];
 
 // --- Hook para cargar scripts externos (HTML5-QRCode) ---
-const useScript = (src) => {
+const useScript = (src: string) => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
     const script = document.createElement("script");
